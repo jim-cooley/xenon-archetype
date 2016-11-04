@@ -1,12 +1,37 @@
-*.class
+# OS X FS metadata
+.DS_Store
+# vim backups of files that are open at time of commit
+*.swp
+.settings/*
+/bin
+*/bin
+target
+.classpath
+.project
+.idea
+.settings
+*.iml
+*/tmp
+tmp/
+*.git.properties
+*.espressostorage
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# maven-release-plugin artifacts
+/release.properties
+pom.xml.releaseBackup
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# PMD maven plug in artifacts
+*.pmd
+*.pmdruleset.xml
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# go artifacts
+xenon-client/bin
+xenon-client/src/main/resources/*
+xenon-client/src/main/go/_vendor/src/*
+xenon-common/src/main/go/_vendor/src/*
+
+# vagrant
+vagrant/
+.vagrant/
+lib/
+classes/
